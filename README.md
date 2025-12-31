@@ -30,9 +30,7 @@ Python 3.14.x
 
 ## Step 2 – Build the Python virtual environment
 
-Open Powershell
-
-Navigate to the project root folder, for example:
+Open the terminal. Navigate to the project root folder, for example:
 
     cd c:/temp/kindle_page_extractor
 
@@ -42,23 +40,43 @@ Run the batch script to build the virtual environment and install dependencies:
 
 This will create a venv folder and install all required Python packages automatically.
 
+NOTE: THIS ONLY NEEDS TO BE DONE ONCE.
+
 ## Step 3 – Open Kindle and Prepare the Book
 
 Launch Kindle for PC, open the Kindle book you want to extract pages from, and make sure the book is on the cover page (first page).
 
 ## Step 4 – Run the Script
 
-In the same Powershell window, run:
+There are two ways to run the script.
+
+### 4(a) - Automatic
+
+Please double-click 
+    
+    .\get_kindle_book.cmd
+
+to execute the script with default parameters.
+
+### 4(b) - Manual
+In the same terminal window, run:
 
     .\venv\Scripts\python.exe .\main.py
+    
+This runs the script with default parameters.
 
-This runs the script with default parameters
+### Notes for Both Methods
 
-Screenshots will be saved to the default directory unless changed.
+Screenshots will be saved to the default directory at
 
-A PDF will be generated at the default location (.\Output.pdf in the project root)
+    .\Output\Screenshots\[YYYYMMDD_HHMMSS]
 
-NOTE: After each book, clear the screenshots directory before running the next book! The script uses the same directory for screenshots unless you specify a different one with the --output-dir flag.
+A PDF will be generated at the default location 
+
+    .\Output\PDFs\[YYYYMMDD_HHMMSS]_Output.pdf
+    
+
+Rinse and repeat for any subsequent books. **Ensure you do STEP 3!**
 
 # Optional – Custom Parameters
 
@@ -78,30 +96,30 @@ For more parameters, please run
 
     .\venv\Scripts\python.exe main.py --help
 
-# Tips:
+# Logging
 
-Always start Kindle before running the script
+It should be noted that the log files for the script are stored at .\Logs\main.py.log
 
-Make sure the project path has no spaces to avoid path issues
+where "." refers to the project root.
 
 # Appendix A: Libraries Needed
 
 Based on the pip freeze, these are the libraries used.
 
-Deprecated==1.3.1
-img2pdf==0.6.3
-lxml==6.0.2
-MouseInfo==0.1.3
-packaging==25.0
-pikepdf==10.1.0
-pillow==12.0.0
-psutil==7.2.1
-PyAutoGUI==0.9.54
-PyGetWindow==0.0.9
-PyMsgBox==2.0.1
-pyperclip==1.11.0
-PyRect==0.2.0
-PyScreeze==1.0.1
-pytweening==1.2.0
-pywin32==311
-wrapt==2.0.1
+    Deprecated==1.3.1
+    img2pdf==0.6.3
+    lxml==6.0.2
+    MouseInfo==0.1.3
+    packaging==25.0
+    pikepdf==10.1.0
+    pillow==12.0.0
+    psutil==7.2.1
+    PyAutoGUI==0.9.54
+    PyGetWindow==0.0.9
+    PyMsgBox==2.0.1
+    pyperclip==1.11.0
+    PyRect==0.2.0
+    PyScreeze==1.0.1
+    pytweening==1.2.0
+    pywin32==311
+    wrapt==2.0.1
