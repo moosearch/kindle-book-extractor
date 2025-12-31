@@ -1,16 +1,16 @@
 # Kindle Book Screenshot Script – Setup & Usage
 
-This script automatically screenshots all the pages of a Kindle book in the Kindle for PC application.
+This script automatically screenshots all the pages of a Kindle book in the Kindle for PC application and bundles it into a PDF.
 
 # PRE-REQUISITES
 
 Before using this script, make sure you have the following installed:
 
-Amazon Kindle for PC (desktop application)
+- Amazon Kindle for PC (desktop application)
+- Python 3.14.x (or later; ensure it is added to your system PATH)
+- Windows 10 or 11
 
-Python 3.14.x (or later; ensure it is added to your system PATH)
-
-Windows 10 or 11
+This will not work on Linux or Mac!
 
 # PROJECT SETUP STEPS
 
@@ -26,9 +26,11 @@ python --version
 
 You should see something like:
 
-Python 3.14.x
+    Python 3.14.x
 
 ## Step 2 – Build the Python virtual environment
+
+NOTE: THIS STEP ONLY NEEDS TO BE DONE ONCE.
 
 Open the terminal. Navigate to the project root folder, for example:
 
@@ -40,8 +42,6 @@ Run the batch script to build the virtual environment and install dependencies:
 
 This will create a venv folder and install all required Python packages automatically.
 
-NOTE: THIS ONLY NEEDS TO BE DONE ONCE.
-
 ## Step 3 – Open Kindle and Prepare the Book
 
 Launch Kindle for PC, open the Kindle book you want to extract pages from, and make sure the book is on the cover page (first page).
@@ -50,7 +50,7 @@ Launch Kindle for PC, open the Kindle book you want to extract pages from, and m
 
 There are two ways to run the script.
 
-### 4(a) - Automatic
+### 4(a) - Batch Script
 
 Please double-click 
     
@@ -76,7 +76,9 @@ A PDF will be generated at the default location
     .\Output\PDFs\[YYYYMMDD_HHMMSS]_Output.pdf
     
 
-Rinse and repeat for any subsequent books. **Ensure you do STEP 3!**
+## Step 5
+
+Repeat steps 3 and 4 for any subsequent kindle books.
 
 # Optional – Custom Parameters
 
