@@ -98,12 +98,6 @@ For more parameters, please run
 
     .\venv\Scripts\python.exe main.py --help
 
-# Logging
-
-It should be noted that the log files for the script are stored at .\Logs\main.py.log
-
-where "." refers to the project root.
-
 # Appendix A: Libraries Needed
 
 Based on the pip freeze, these are the libraries used.
