@@ -30,8 +30,6 @@ You should see something like:
 
 ## Step 2 – Build the Python virtual environment
 
-NOTE: THIS STEP ONLY NEEDS TO BE DONE ONCE.
-
 Open the terminal. Navigate to the project root folder, for example:
 
     cd c:/temp/kindle_page_extractor
@@ -52,7 +50,7 @@ There are two ways to run the script.
 
 ### 4(a) - Batch Script
 
-Please double-click 
+Please double-click the file
     
     .\get_kindle_book.cmd
 
@@ -63,7 +61,9 @@ In the same terminal window, run:
 
     .\venv\Scripts\python.exe .\main.py
     
-This runs the script with default parameters.
+This runs the script with default parameters. You can also activate the python virtual environment and run it as such:
+
+    python .\main.py
 
 ### Notes for Both Methods
 
@@ -98,7 +98,7 @@ For more parameters, please run
 
     .\venv\Scripts\python.exe main.py --help
 
-# Appendix A: Libraries Needed
+# Appendix A: Pip Freeze Contents
 
 Based on the pip freeze, these are the libraries used.
 
