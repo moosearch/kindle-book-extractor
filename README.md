@@ -6,8 +6,8 @@ This script automatically screenshots all the pages of a Kindle book in the Kind
 
 Before using this script, make sure you have the following installed:
 
-- Amazon Kindle for PC (desktop application)
-- Python 3.14.x (or later; ensure it is added to your system PATH)
+- Amazon Kindle (PC desktop application) - I tested with 2.8.0 (70980) at the time.
+- Python 3.14.x (ensure it is added to your system PATH). No guarantees with older versions of python.
 - Windows 10 or 11
 
 This will not work on Linux or Mac!
